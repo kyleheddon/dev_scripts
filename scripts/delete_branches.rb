@@ -2,9 +2,7 @@
 
 def get_branch_from_user
   print "Enter the name of the branch to delete, or press Enter to quit: "
-  branch = gets.chomp
-  puts
-  branch
+  gets.chomp
 end
 
 def delete(branch)
