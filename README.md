@@ -1,4 +1,19 @@
-dev_scripts
-===========
+* Add the directory of the scripts to your path
 
-Scripts I for random things...
+
+delete_branches.rb
+---
+
+From a git repo directory: `delete_branches.rb`
+```
+Git branches:
+  blah
+* master
+
+Enter the name of the branch to delete, or press Enter to quit: blah
+
+branch, blah, deleted
+
+Git branches:
+* master
+```
