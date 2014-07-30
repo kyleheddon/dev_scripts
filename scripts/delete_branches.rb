@@ -11,7 +11,7 @@ def delete(branch)
 end
 
 def list_branches
-  print "\nGit branches:\n"
+  print "Git branches:\n"
   puts `git branch`
   puts
 end
