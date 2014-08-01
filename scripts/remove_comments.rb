@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-def read_lines(file_name)
+def read_relevant_lines(file_name)
   lines = []
   file = File.new(file_name, "r")
   while (line = file.gets)
@@ -12,7 +12,7 @@ def read_lines(file_name)
 end
 
 file_name = ARGV[0]
-contents = read_lines(file_name).join().strip
+contents = read_relevant_lines(file_name).join().strip
 
 `echo '#{contents}' > #{file_name}`
 `cat #{file_name}`
